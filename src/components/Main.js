@@ -52,12 +52,12 @@ export default function Main(props) {
 
     return (
         <main>
-            <h1>This is a game of memory</h1>
+            <h1>Memory Game: Don't click the same Pokemon twice!</h1>
             <CardGrid items={props.items} updateScoreKeeper={updateScoreKeeper} images={activePokemonArray}/>
             <div className="controls">
                 <p>Score: {score}</p>
                 <p>High score: {highScore}</p>
-                <button onClick={onResetClick}>Reset</button>
+                <button className="resetBtn" onClick={onResetClick}>Reset</button>
             </div>
         </main>
     )
